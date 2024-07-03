@@ -14,9 +14,8 @@ This project demonstrates core concepts of ***Computer Networks*** and ***Operat
 - [Requirements](#requirements)
 - [Usage](#usage)
 - [Contributing](#contributing)
-- [License](#license)
 
-## Single-Threaded Web Server
+## Single-Threaded Web Server 
 
 A single-threaded web server processes one client request at a time. This means it can handle only one connection in its main thread of execution, which is suitable for basic applications or learning purposes.
 
@@ -24,7 +23,7 @@ A single-threaded web server processes one client request at a time. This means 
 
 In a multi-threaded web server, the main server thread listens for incoming connections. When a new connection is accepted, the server spawns a new thread to handle the request. This allows the main server thread to continue listening for and accepting new connections while existing requests are being processed concurrently.
 
-## Multi-Threaded Web Server using Threadpool
+## Multi-Threaded Web Server using Thread pool
 
 A multi-threaded web server using a thread pool is an advanced type of multi-threaded server that manages a pool of pre-created threads to handle incoming client requests. Instead of creating a new thread for each request, the server reuses existing threads from the pool. This approach can improve performance and resource management, especially under high load.
 
